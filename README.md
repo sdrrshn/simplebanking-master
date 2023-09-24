@@ -1,6 +1,3 @@
-<h1>Deploy</h1>
-
-
 
 <h2>Build</h2>
 <ul>
