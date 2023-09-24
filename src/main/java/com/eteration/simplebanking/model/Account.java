@@ -62,18 +62,18 @@ public class Account {
 
 
     public void credit(double amount)  {
-        if (amount < 0) {
-            throw new AmountException("amount must be greater than 0");
+        if (amount <= 0) {
+            throw new AmountException("amount must be greater than or equal to 0");
         }
         balance += amount;
     }
 
     public void debit(double amount) throws  InsufficientBalanceException {
-        if (amount < 0) {
-            throw new AmountException("amount must be greater than 0");
+        if (amount <= 0) {
+            throw new AmountException("amount must be greater than or equal to 0");
         }
         if (balance - amount < 0) {
-            throw new InsufficientBalanceException();
+            throw new InsufficientBalanceException("You can withdraw a maximum of " +balance);
         }
         balance -= amount;
     }
