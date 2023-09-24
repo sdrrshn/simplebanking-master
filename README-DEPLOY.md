@@ -12,6 +12,7 @@
 
 <h3>Open Data Base Ui</h3>
 <ul>
+<li>Open url "http://localhost:8080/h2console"</li>
 <li>url: jdbc:h2:mem:simple_banking_db</li>
 <li>driver : org.h2.Driver</li>
 <li>username : sa</li>
